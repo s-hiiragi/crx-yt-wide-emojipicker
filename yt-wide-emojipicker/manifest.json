@@ -1,7 +1,7 @@
 {
     "manifest_version" : 3,
     "name" : "YouTube Wide Emoji Picker",
-    "description" : "Make the emoji picker wider",
+    "description" : "Make the number of lines in the emoji picker more than YouTube's default of 3 rows",
     "version" : "1.0.0",
 
     "permissions": [

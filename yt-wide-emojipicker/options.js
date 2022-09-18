@@ -1,17 +1,17 @@
 function restoreOptions() {
     chrome.storage.sync.get({
-        numRows: 5
+        numLines: 5
     }, (items) => {
-        document.querySelector('#numrows').value = items.numRows;
+        document.querySelector('#numLines').value = items.numLines;
     });
 }
 
 function saveOptions() {
-    const numRows = Number(document.querySelector('#numrows').value);
+    const numLines = Number(document.querySelector('#numLines').value);
     chrome.storage.sync.set({
-        numRows: numRows
+        numLines: numLines
     });
 }
 
 document.addEventListener('DOMContentLoaded', restoreOptions);
-document.querySelector('#numrows').addEventListener('change', saveOptions);
+document.querySelector('#numLines').addEventListener('change', saveOptions);

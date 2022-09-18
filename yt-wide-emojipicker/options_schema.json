@@ -2,9 +2,9 @@
     "type": "object",
     
     "properties": {
-        "numRows": {
-            "title": "Number of rows in Emoji picker",
-            "description": "Number of rows in Emoji picker",
+        "numLines": {
+            "title": "Number of lines in the emoji picker",
+            "description": "Number of lines in the emoji picker",
             "type": "number"
         }
     }
