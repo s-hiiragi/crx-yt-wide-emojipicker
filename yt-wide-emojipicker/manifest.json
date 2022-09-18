@@ -1,0 +1,31 @@
+{
+    "manifest_version" : 3,
+    "name" : "YouTube Wide Emoji Picker",
+    "description" : "Make the emoji picker wider",
+    "version" : "1.0.0",
+
+    "permissions": [
+        "storage"
+    ],
+
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ],
+
+    "content_scripts" : [
+        {
+            "all_frames" : true,
+            "js" : ["content_script.js"],
+            "matches" : ["https://www.youtube.com/live_chat*"]
+        }
+    ],
+
+    "storage": {
+        "managed_schema": "options_schema.json"
+    },
+
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    }
+}

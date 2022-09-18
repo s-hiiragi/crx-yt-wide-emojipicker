@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    
+    "properties": {
+        "numRows": {
+            "title": "Number of rows in Emoji picker",
+            "description": "Number of rows in Emoji picker",
+            "type": "number"
+        }
+    }
+}
